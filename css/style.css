@@ -1,0 +1,46 @@
+/* @font-face {
+    font-family: 'Paperlogy-4';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'HakgyoansimAllimjangTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2') format('woff2');
+    /* font-weight: 700; */
+    font-style: normal;
+}
+
+body {
+    font-family: 'HakgyoansimAllimjangTTF-B';
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul {
+    display: inline-flex;
+}
+
+.menu > li {
+    margin-right: 30px;
+}
+
+
+h1 > img {
+    width: 155px;
+    height: 30px;
+}
+
+.title_text {
+    font-size: 70px;
+    font-weight: 600;
+    color: #C0C0C0;
+}
+
+.title_text > span {
+    color: #41444B;
+}
