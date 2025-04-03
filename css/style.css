@@ -1,39 +1,62 @@
-/* @font-face {
-    font-family: 'Paperlogy-4';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-} */
-
 @font-face {
-    font-family: 'HakgyoansimAllimjangTTF-B';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2') format('woff2');
-    /* font-weight: 700; */
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
-body {
+/* @font-face {
     font-family: 'HakgyoansimAllimjangTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+body {
+    font-family: 'Pretendard-Regular';
+    
 }
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px 50px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 nav > ul {
     display: inline-flex;
+    color: #8E8E8E;
 }
 
 .menu > li {
     margin-right: 30px;
 }
 
+nav > ul > .right_menu_2 {
+    margin-left: 15px; 
+}
 
-h1 > img {
+h1 {
     width: 155px;
     height: 30px;
 }
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main > figure > img {
+    border-radius: 20px;
+}
+
 
 .title_text {
     font-size: 70px;
@@ -43,4 +66,8 @@ h1 > img {
 
 .title_text > span {
     color: #41444B;
+}
+
+h2 > .title_text {
+    font-weight: 800;
 }
