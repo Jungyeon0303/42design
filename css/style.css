@@ -15,7 +15,6 @@
 
 body {
     font-family: 'Pretendard-Regular';
-    
 }
 
 
@@ -38,12 +37,16 @@ header > nav > .header_navigation {
     align-items: center;
     display: flex;
     gap: 20px;
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header > nav > .etc_menu {
     display: flex;
     gap: 20px;
+}
+
+header > nav > .etc_menu > .right_menu {
+    color: #caa95b;
 }
 
 
@@ -55,12 +58,21 @@ h1 {
 
 .main {
     padding: 20px 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 }
 
-.main > figure > img {
+.main_slider {
+    height: 650px;
+    margin-bottom: 120px;
+}
+
+.main > .main_slider > li > img {
     width: 100%;
-    border-radius: 20px;
-    height: 80%;
+    height: 650px;
+    border-radius: 30px;
 }
 
 .main_text {
@@ -87,4 +99,85 @@ h1 {
 
 h2 > .title_text {
     font-weight: 800;
+}
+
+.about_us {
+    width: 100%;
+    height: 920px;
+    background-color: #F3F3F3;
+    margin-bottom: 30px;
+}
+
+.about_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.about_us > .about_text > h3 {
+    color: #8E8E8E;
+    line-height: 22px;
+}
+
+.about_us > .about_text {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    gap: 24px;
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.project {
+    width: 1200px;
+    padding-top: 80px;
+}
+
+.plus_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 0.2px solid #222;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.plus_icon::before,
+.plus_icon::after {
+    content: '';
+    position: absolute;
+    background: black;
+}
+
+/* 세로 막대 */
+.plus_icon::before {
+    left: 50%;
+    top: 15%;       
+    width: 0.1px;     
+    height: 70%; 
+    transform: translateX(-50%);
+  }
+  
+  /* 가로 막대 */
+  .plus_icon::after {
+    top: 50%;
+    left: 15%; 
+    width: 70%;   
+    height: 0.1px;     
+    transform: translateY(-50%);
+}
+
+.project_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
