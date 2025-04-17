@@ -24,25 +24,32 @@ header {
     padding: 20px 50px;
 }
 
-header>nav {
+.menu_box {
     display: flex;
-    align-items: center;
-    color: #8E8E8E;
+    justify-content: space-between;
+    width: 100%;
 }
 
-header>nav>.menu {
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8E8E8E;
+    width: 100%;
+}
+
+.menu {
     display: flex;
     margin-left: 100px;
     gap: 30px;
 }
 
-header>nav>.etc_menu {
+.etc_menu {
     display: flex;
-    margin-right: auto;
     gap: 20px;
 }
 
-header>nav>.etc_menu>.right_menu {
+.right_menu {
     color: #caa95b;
 }
 
@@ -56,7 +63,6 @@ h1 {
 
 /* 메인화면 : OUR PROJECT */
 .main {
-    width: 1843px;
     padding: 20px 50px;
     margin-top: 80px;
     display: flex;
@@ -105,7 +111,7 @@ h2>.title_text {
 /* 회사소개: ABOUT US */
 .about_us {
     width: 100%;
-    height: 1000px;
+    height: 1050px;
     background-color: #f3f3f3;
 }
 
@@ -126,14 +132,44 @@ h2>.title_text {
     margin-top: 16px;
 }
 
-.about_img {
-    position: relative;
-    height: 642px;
-    overflow: hidden;
-    ;
-
+.about_section {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
 }
 
+.box {
+    position: relative;
+    width: 40%;
+    height: 645px;
+    color: #fff;
+    margin: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box:nth-child(1) {
+    background: url(../image/about_1.png)no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.box:nth-child(2) {
+    background: url(../image/about_2.png)no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.box:nth-child(3) {
+    background: url(../image/about_3.png)no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.box:hover {
+    flex-shrink: 0;
+    transition: 0.6s;
+}
 
 /* 포트폴리오: WE DESIGN EVERY PROJECT */
 .project {
@@ -208,7 +244,7 @@ h2>.title_text {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 80px;
     padding: 50px;
 }
 
@@ -229,8 +265,15 @@ h2>.title_text {
     font-size: 130px;
     font-weight: 900;
     color: #D9D9D9;
+    transition: 0.4s;
 }
 
+.process_number:hover  {
+    color: rgb(77, 175, 221);
+    transform: translateY(-21%);
+}
+
+ 
 .use_title {
     font-size: 24px;
     font-weight: 800;
@@ -310,7 +353,7 @@ h2>.title_text {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 .traffic,
@@ -337,11 +380,14 @@ h2>.title_text {
     letter-spacing: 0.5px;
 }
 
-
+.traffic > p {
+    margin-left: 20px;
+}
 
 .subway_guide > p {
     display: flex;
     align-items: center;
+    line-height: 30px;
 }
 
 .subway_info > img {
