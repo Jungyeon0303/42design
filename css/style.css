@@ -18,31 +18,31 @@ body {
 }
 
 
-header  {
+header {
     display: flex;
     align-items: center;
     padding: 20px 50px;
 }
 
-header > nav {
+header>nav {
     display: flex;
     align-items: center;
     color: #8E8E8E;
 }
 
-header > nav > .menu {
+header>nav>.menu {
     display: flex;
     margin-left: 100px;
     gap: 30px;
 }
 
-header > nav > .etc_menu {
+header>nav>.etc_menu {
     display: flex;
     margin-right: auto;
     gap: 20px;
 }
 
-header > nav > .etc_menu > .right_menu {
+header>nav>.etc_menu>.right_menu {
     color: #caa95b;
 }
 
@@ -61,7 +61,7 @@ h1 {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .main_slider {
@@ -69,7 +69,7 @@ h1 {
     margin-bottom: 120px;
 }
 
-.main > .main_slider > li > img {
+.main>.main_slider>li>img {
     width: 100%;
     height: 650px;
     border-radius: 30px;
@@ -82,7 +82,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.main_text > h3 {
+.main_text>h3 {
     color: #C0C0C0;
     line-height: 22px;
 }
@@ -93,11 +93,11 @@ h1 {
     color: #C0C0C0;
 }
 
-.title_text > span {
+.title_text>span {
     color: #41444B;
 }
 
-h2 > .title_text {
+h2>.title_text {
     font-weight: 800;
 }
 
@@ -115,12 +115,12 @@ h2 > .title_text {
     padding-top: 100px;
 }
 
-.about_us > .about_box > .about_text {
+.about_us>.about_box>.about_text {
     margin-bottom: 50px;
 }
 
 
-.about_us > .about_box > .about_text > h3 {
+.about_us>.about_box>.about_text>h3 {
     color: #41444B;
     line-height: 24px;
     margin-top: 16px;
@@ -129,7 +129,8 @@ h2 > .title_text {
 .about_img {
     position: relative;
     height: 642px;
-    overflow: hidden;;
+    overflow: hidden;
+    ;
 
 }
 
@@ -162,18 +163,18 @@ h2 > .title_text {
 /* 세로 막대 */
 .plus_icon::before {
     left: 50%;
-    top: 15%;       
-    width: 0.1px;     
-    height: 70%; 
+    top: 15%;
+    width: 0.1px;
+    height: 70%;
     transform: translateX(-50%);
-  }
-  
-  /* 가로 막대 */
-  .plus_icon::after {
+}
+
+/* 가로 막대 */
+.plus_icon::after {
     top: 50%;
-    left: 15%; 
-    width: 70%;   
-    height: 0.1px;     
+    left: 15%;
+    width: 70%;
+    height: 0.1px;
     transform: translateY(-50%);
 }
 
@@ -190,7 +191,7 @@ h2 > .title_text {
     margin-top: 36px;
 }
 
-.project > .project_img {
+.project>.project_img > ul {
     display: flex;
     margin: 0 auto;
 }
@@ -213,7 +214,7 @@ h2 > .title_text {
 
 .ab_box {
     position: absolute;
-    top: 60%;
+    top: 65%;
     width: 100%;
 }
 
@@ -241,6 +242,8 @@ h2 > .title_text {
 
 .use_text {
     color: #41444B;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 
@@ -256,7 +259,7 @@ h2 > .title_text {
 .contact {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 230px;   
+    padding-top: 230px;
 }
 
 .information {
@@ -277,7 +280,11 @@ h2 > .title_text {
     font-weight: 400;
 }
 
-.sub_box > p {
+.address_top_box>img {
+    margin-right: 5px;
+}
+
+.sub_box>p {
     font-size: 16px;
 }
 
@@ -290,6 +297,64 @@ h2 > .title_text {
     justify-content: space-between;
 }
 
+.address,
+.email,
+.tel,
+.fax>p {
+    letter-spacing: 0.5px;
+
+}
+
+/* contact : 오른쪽  */
+.subway_line {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.traffic,
+.subway_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.subway_info > h3 {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #41444B;
+    letter-spacing: 0.5px;
+}
+
+.traffic > h3 {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #41444B;
+    letter-spacing: 0.5px;
+}
+
+
+
+.subway_guide > p {
+    display: flex;
+    align-items: center;
+}
+
+.subway_info > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.traffic > img {
+    width: 20px;
+    height: 24px;
+    margin-right: 8px;
+}
 
 /* 푸터 */
 footer {
@@ -297,10 +362,43 @@ footer {
     height: 360px;
     background-color: #F3EEE2;
     display: flex;
+    margin-top: 150px;
 }
 
-footer > .footer_contents > ul {
+.footer_box {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
     display: flex;
-    font-size: 12px;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer_box > h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+
+.company_name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.footer_line {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    color: #A4A4A4;
+    margin-top: 40px;
+    font-weight: 100;
 }
